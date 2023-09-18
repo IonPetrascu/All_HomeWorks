@@ -1,0 +1,134 @@
+@import url(normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Roboto:wght@400;500&display=swap');
+
+
+/* font-family: 'Megrim', cursive;
+font-family: 'Roboto', sans-serif; */
+
+*,*:after,*::before{
+	/* box-sizing: border-box; */
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	width: 100%;
+	height: 100vh;
+	
+
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+button{
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+ul{
+	list-style-type: none;
+}
+.header__logo{
+	font-family: 'Megrim', cursive;
+}
+
+.header {
+padding: 30px 0px;
+background-color: rgba(47, 0, 255, 0.322);
+}
+.header__wrapper {
+	max-width: 1700px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.header__logo{
+	font-family: 'Megrim', cursive;
+	font-size: 20px;
+}
+
+.header__nav {
+	display: flex;
+	gap: 40px;
+}
+.nav__item {
+}
+.nav__link {
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 40px;
+	padding: 0px 30px;
+	background-color: #252525;;
+	height: calc(100vh - 95px);
+	
+}
+.main__title {
+	text-align: center;
+	color: #F66E6E;
+	font-size: 40px;
+	font-family: 'Megrim', cursive;
+}
+.main__cards {
+	display: flex;
+	margin: 0 auto;
+	gap: 30px;
+}
+.card {
+	display: flex;
+	flex-direction:column ;
+	align-items: center;
+	gap: 10px;
+  max-width: 250px;
+  padding: 20px;
+  background-color:#D8D8D8 ;
+  border: 8px double #6A846F ;;
+	text-align: center;
+	border-top-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+}
+.card__img {
+	max-width: 250px;
+	height: 180px;
+
+	
+
+}
+.card__img img{
+ object-fit: cover;
+ width: 250px;
+ height: 180px;
+ border-top-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+}
+
+.card__title {
+	font-size: 20px;
+	color: #6A846F ;;
+
+}
+.card__desc {
+	font-size: 14px;
+}
+.card__price {
+}
+.card__btn {
+	width: 100%;
+	padding: 10px 0px;
+	font-size: 20px;
+	color: white;
+	background-color:#6A846F ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+span{
+	color:#F66E6E ;
+}

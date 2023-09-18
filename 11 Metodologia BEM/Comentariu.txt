@@ -1,0 +1,1 @@
+Eu inca de la inceput am adaugat metodologia BEM ,schimbari nu am facut multe doar ca am adaugat modificator la un button

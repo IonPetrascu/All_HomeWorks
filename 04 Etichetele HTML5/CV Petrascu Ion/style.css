@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500&display=swap');
+
+	*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: 500;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	background: url(img/bg.jpg) no-repeat;
+	background-size: cover;
+}
+img{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+}
+h1{
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+}
+h2{
+	color:#FFA200;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+h3{
+	color: #000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	
+}
+hr{
+	height: 1px;
+	background-color: #000;
+}
+a{
+	color: #FFA200;
+}
+a:hover{
+	color: #FFA200;
+}
+.desc__text{
+	color: #393939;
+	font-family: 'Lato', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 15px;
+	
+}
+.wrapper{
+	background: #ffffff;
+	width: 700px;
+	border: 1px solid #000;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	
+}
+.sidebar{
+	width: 250px;
+	padding: 20px ;
+	background-color:#333132;
+	height: 100%;
+	
+}
+.profil-img{
+	border-radius: 50%;
+}
+
+.desc{
+	padding: 17px 20px;
+
+}
+
+.sidebar__title{
+	color: #FFF;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 20px;
+ 	position: relative;
+	margin-left: 56px;
+
+}
+/* .sidebar__title:nth-child(1)::after{
+	content: "";
+	position: absolute;
+	width: 25px ;
+	height: 25px;
+	top: 0;
+	left: -25%;
+	background: url(img/phone.svg);
+}
+.sidebar__title:nth-child(2)::after{
+	content: "";
+	position: absolute;
+	width: 25px ;
+	height: 25px;
+	top: 0;
+	left: -25%;
+	background: url(img/tools.svg);
+}
+.sidebar__title:nth-child(3)::after{
+	content: "";
+	position: absolute;
+	width: 25px ;
+	height: 25px;
+	top: 0;
+	left: -25%;
+	background: url(img/tools.svg);
+} */
+ul li {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+}
+ul li a{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+ul{
+	display: flex;
+	flex-direction: column;
+	gap: 21px;
+	padding-left: 60px;
+	margin-top: 20px;
+
+}
+li{
+	list-style-image: url("img/circle.svg");
+}
+/* li{
+	position: relative;
+}
+li::after{
+	content: "";
+	position: absolute;
+	background: url(img/circle.svg)  no-repeat;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	transform: translate(-50%,25%);
+} */
