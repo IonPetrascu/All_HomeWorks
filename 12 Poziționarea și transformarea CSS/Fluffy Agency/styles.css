@@ -21,7 +21,7 @@ body{
 --font-primary:'Roboto', sans-serif;
 
 
---bg-white:#F4F6F7;
+--bg-gray:#F4F6F7;
 --bg-lavender:#DCE2E6;
 --bg-coral:#FF7F57;
 
@@ -85,7 +85,7 @@ button{
 /* Header section start  */
 .header{
 	padding-top: 40px;
-	background-color: var(--bg-white);
+	background-color: var(--bg-gray);
 }
 .header__wrapper {
 	display: flex;
@@ -107,7 +107,7 @@ button{
 }
 /* Hero section start */
 .hero {
-	background-color: var(--bg-white);
+	background-color: var(--bg-gray);
 }
 .hero_wrapper {
 	display: flex;
@@ -147,4 +147,25 @@ button{
 	width: 64px;
 	height: 64px;
 	margin-bottom: 20px;
+}
+/* KPI section start */
+.kpi {
+	background-color: var(--bg-gray);
+	padding: 60px 0;
+}
+.kpi__wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+.kpi__col {
+	display: flex;
+	flex-direction: column;
+}
+.kpi__quantity {
+	color: var(--color-dark-blue);
+	font-size: 46px;
+	font-weight: 400;
+}
+.kpi__quantity > span{
+	color: var(--bg-coral);
 }
