@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url(normilize.css);
 
-*{
+*,*::after,*::before{
 	box-sizing: border-box;
-	margin:0 ;
-	padding: 0;
+	margin:0;
+	padding:0;
 }
 a{
  text-decoration: none;
@@ -32,6 +32,8 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
 	font-weight: 700;
+	margin: 0;
+
 }
 h1,h2,p,a{
 	color: var(--color-dark-blue);
@@ -39,6 +41,7 @@ h1,h2,p,a{
 h1{
 	font-size: 46px;
 	letter-spacing: -1px;
+	margin-bottom: 10px;
 }
 h2{
 	font-size: 38px;
@@ -49,24 +52,40 @@ h3{
 	text-align: center;
 	font-size: 20px;
 }
+button{
+	color: #FFF;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	padding: 19px 0px ;
+	box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.30);
+	border-radius: 3px;
+}
 .description{
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 27px;
+	opacity: 0.9;
+	padding-bottom: 20px;
 }
+
 .suptitle{
 	color: var(--color-royal-blue);
 	font-size: 16px;
 	font-weight: 500;
+	margin-bottom: 5px;
 }
 .container{
 	max-width: 1190px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
-/* Header section  */
+/* Header section start  */
 .header{
 	padding-top: 40px;
+	background-color: var(--bg-white);
 }
 .header__wrapper {
 	display: flex;
@@ -85,4 +104,28 @@ h3{
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 12px;
+}
+/* Hero section start */
+.hero {
+	background-color: var(--bg-white);
+}
+.hero_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 154px 0px 178px;
+}
+.hero__desc {
+	width: 460px;
+}
+.hero__img {
+	width: 568px;
+	height: 412px;
+}
+.hero__img > img {
+	width: 100%;
+}
+.hero__btn{
+	background-color: var(--bg-coral);
+	padding: 19px 42px;
 }
