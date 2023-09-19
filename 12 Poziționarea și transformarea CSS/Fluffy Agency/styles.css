@@ -129,3 +129,22 @@ button{
 	background-color: var(--bg-coral);
 	padding: 19px 42px;
 }
+/* Services section start */
+.services {
+	text-align: center;
+	padding: 120px 0 100px;
+}
+.services__title {
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	margin-bottom: 30px;
+}
+.services__row {
+	display: flex;
+	gap: 30px;
+}
+.services__col > img {
+	width: 64px;
+	height: 64px;
+	margin-bottom: 20px;
+}
