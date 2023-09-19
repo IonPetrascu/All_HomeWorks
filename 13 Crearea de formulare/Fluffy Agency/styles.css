@@ -20,6 +20,7 @@ body{
 :root{
 --font-primary:'Roboto', sans-serif;
 
+--color-white:#fff;
 
 --bg-gray:#F4F6F7;
 --bg-lavender:#DCE2E6;
@@ -53,7 +54,7 @@ h3{
 	font-size: 20px;
 }
 button{
-	color: #FFF;
+	color: var(--color-white);
 	text-align: center;
 	font-size: 17px;
 	font-weight: 600;
@@ -231,4 +232,30 @@ button{
 .info__img {
 	max-width:100%;
 	max-height:450px
+}
+/* CTA section start */
+.cta {
+	background-color: var(--bg-coral);
+	padding: 100px 0;
+	text-align: center;
+	color: var(--color-white);
+}
+.cta__wrapper{
+	max-width: 770px;
+	margin: 0 auto;
+}
+.cta__suptitle ,.cta__title,.cta__description {
+	color: inherit;
+}
+.cta__title{
+	font-size: 46px;
+	letter-spacing: -1px;
+}
+.cta__description {
+	opacity: 1;
+}
+.cta__btn {
+	padding: 20px 100px;
+	background-color: var(--color-royal-blue);
+
 }
