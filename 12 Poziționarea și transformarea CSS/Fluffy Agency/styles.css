@@ -68,7 +68,7 @@ button{
 	font-weight: 400;
 	line-height: 27px;
 	opacity: 0.9;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .suptitle{
@@ -76,6 +76,7 @@ button{
 	font-size: 16px;
 	font-weight: 500;
 	margin-bottom: 5px;
+	
 }
 .container{
 	max-width: 1190px;
@@ -168,4 +169,39 @@ button{
 }
 .kpi__quantity > span{
 	color: var(--bg-coral);
+}
+/* About Us section start */
+.about{
+	padding:100px 0 ;
+}
+.about .suptitle {
+	text-align: center;
+	display: block;
+}
+.about__title {
+	margin-bottom: 30px;
+}
+.about__content {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+.about__content-left {
+	max-width: 370px;
+}
+.about__desc-italic {
+	font-style: italic;
+}
+.about__content-right{
+	max-width: 565px;
+}
+.about__content-right >p:first-child{
+	margin-bottom: 30px;
+}
+.about__logos {
+	display: flex;
+  justify-content:center;
+  align-items: center;
+	gap: 70px;
 }
