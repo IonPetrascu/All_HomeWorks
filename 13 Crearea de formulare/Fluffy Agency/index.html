@@ -129,6 +129,24 @@
 				</div>
 			</div>
 		</section>
+		<section class="section-form">
+			<div class="container">
+				<form onsubmit="return checkForm(this)" id="main-form" class="form" action="" method="post">
+					<h2 class="form__title">Contact Us</h2>
+					<label title="text simplu" id="label" for="name">Full Name</label>
+					<input id="name" name="name" type="text" placeholder="Ram Kaji">
+					<hr>
+					<label for="email">Your Email Address</label>
+					<input id="email" name="email" type="email" placeholder="hello@lastdoor.stor" ><!-- pattern="[a-zA-Z]{*}@[a-zA-Z]{*}.[a-zA-Z]{2}" -->
+					<hr>
+					<label for="textarea">Your Message</label>
+					<textarea id="textarea" rows="4" name="textarea" placeholder="Type your message here.."></textarea>
+					<hr>
+					<button type="submit">Submit Yor Message</button>
+				</form>
+			</div>
+		</section>
 	</main>
+	<script src="app.js"></script>
 </body>
 </html>
