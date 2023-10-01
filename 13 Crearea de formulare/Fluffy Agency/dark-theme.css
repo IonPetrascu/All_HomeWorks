@@ -1,0 +1,61 @@
+.dark-theme a, .dark-theme p, .dark-theme h1, .dark-theme h2{
+	color:rgb(255, 255, 255);       
+}
+
+.dark-theme {
+background-color: #000;
+
+}
+.dark-theme .btn-light-mode{
+	fill: white;
+
+}
+.dark-theme h3{
+	color: #000;
+	
+}
+body.dark-theme .suptitle{
+	color: #96b7e9;
+	
+	
+}
+body.dark-theme .header{
+	background-color: #000;
+	padding-bottom: 20px;
+}
+body.dark-theme .hero {
+	background-color: #3332324d;
+}
+
+body.dark-theme .kpi {
+	background-color: #3332324d;
+}
+
+body.dark-theme .kpi__quantity {
+	color: #fff;
+
+}
+body.dark-theme .info__wrapper {
+	border-top: 1px solid #ffffff3d;
+}
+body.dark-theme .info__list {
+	color: #ffffff5e;
+	
+}
+
+body.dark-theme .section-form {
+	background-color: #3332324d;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -41,3 +41,10 @@ let elements = document.querySelectorAll('.element-animation');
 for (let elm of elements) {
   observer.observe(elm);
 }
+
+//btn light mode
+let btnLightMode = document.querySelector(".btn-light-mode")
+
+btnLightMode.addEventListener("click",()=>{
+	document.body.classList.toggle("dark-theme")
+})
