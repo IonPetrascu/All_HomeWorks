@@ -1,9 +1,0 @@
-@use "./base/extends";
-
-header{
-    
-    height: 100px;
-    background-color: red;
-    @extend %extends-example;
-}
-
