@@ -510,6 +510,7 @@ h1{
   .testimonial__info{
     background-image: url(./img/base/3.jpg);
     max-width: 100%;
+    aspect-ratio: 10/3;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -553,6 +554,7 @@ h1{
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 3;
 
   }
   #hero{
@@ -578,6 +580,17 @@ h1{
 }
 
 @media screen and (max-width:500px) {
+  .country__wrapper{
+    height: 600px;
+    transition: all 0.5s linear;
+  }
+  #howItWork{
+    padding-top: 0px;
+  }
+  #hero{
+    height: 700px;
+    transition: all 0.5s linear;
+  }
   .header-nav__btn{
     display: flex;
   }
