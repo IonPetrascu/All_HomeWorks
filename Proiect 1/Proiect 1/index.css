@@ -50,7 +50,7 @@ h1{
 }
 /* Hero section */
 
-#hero-section{
+#hero{
   height: 800px;
   background-image: url(/img/background/1.jpg) ;
   background-size: cover;
@@ -334,4 +334,50 @@ h1{
   line-height: 26px; 
   letter-spacing: 1.2px;
   text-transform: uppercase;
+}
+
+/* testimonial */
+#testimonial{
+  background: url(./img/background/5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 128px 0px 200px;
+}
+
+.testimonial__title {
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 36px;
+  line-height: 26px; 
+  margin-bottom: 91px;
+}
+.testimonial__wrapper {
+  display: flex;
+
+}
+.testimonial__img {
+  max-width: 445px;
+  min-width: 280px;
+  height: 100%;
+}
+.testimonial__img{
+  
+}
+.testimonial__info {
+  background: var(--color-dark-charcoal);
+  padding: 49px 25px 39px 62px;
+  max-width: 668px;
+}
+.testimonial__info-title {
+  color: #FEFEFE;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.testimonial__info-desc {
+  color: var(--color-main);
+  font-size: 16px;
+  line-height: 26px;
 }
