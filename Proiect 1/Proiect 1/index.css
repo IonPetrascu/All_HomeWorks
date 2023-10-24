@@ -9,6 +9,10 @@
 a{
   text-decoration: none;
 }
+button{
+  border: none;
+  cursor: pointer;
+}
 :root{
 --font-main:'Josefin Sans', sans-serif;
 --font-secondary:font-family: 'Aleo', serif;
@@ -33,6 +37,7 @@ body{
   margin: 0 auto;
 
 }
+
 h1{
   color: var(--color-white);
   text-align: center;
@@ -46,9 +51,8 @@ h1{
 /* Hero section */
 
 #hero-section{
-  width: 100vw;
   height: 800px;
-  background-image: url(/img/background/1.jpg);
+  background-image: url(/img/background/1.jpg) ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -158,3 +162,66 @@ h1{
   line-height: 26px; 
   text-transform: uppercase;
 }
+/* Why choose Us */
+
+#whyChooseUs {
+  background: url(/img/background/2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 115px 0px ;
+ 
+}
+.wcu__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wcu__info {
+  max-width:560px ;
+  min-width: 260px;
+}
+.wcu__title {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 36px;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+.wcu__desc {
+  color: var(--color-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; 
+  letter-spacing: 1.6px;
+  margin-bottom: 42px;
+}
+.wcu__button {
+ 
+  padding: 15px 40px;
+  background: rgb(73,107,254);
+  background: linear-gradient(45deg, rgba(73,107,254,1) 40%, rgba(84,116,253,1) 40%);
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; 
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.wcu__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 440px;
+}
+.wcu__gallery img{
+  max-width: 350px;
+}
+.wcu__gallery img:first-child {
+ margin-right: 90px;
+}
+.wcu__gallery img:last-child {
+ margin-left: 90px;
+}
+
