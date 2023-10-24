@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap');
-/* font-family: 'Aleo', serif;
- */
+
 
 *,*::after,*::before{
   box-sizing: border-box;
   margin: 0;
   padding:0 ;
 }
+a{
+  text-decoration: none;
+}
 :root{
+--font-main:'Josefin Sans', sans-serif;
+--font-secondary:font-family: 'Aleo', serif;
+
+
 --color-main:#E8E8E8;
 --color-white:#ffffff;
 --color-accent:#5474FD;
@@ -15,7 +21,7 @@
 
 }
 body{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--font-main);
   font-size: 1em;
   font-weight: 400;
   line-height: 26px;
@@ -96,7 +102,7 @@ h1{
   color: inherit;
   background-color: var(--color-accent);
   text-align: center;
-  font-family: 'Aleo', serif;
+  font-family:var(--font-secondary);
   font-size: 14px;
   font-style: normal;
   line-height: 26px; 
@@ -120,4 +126,35 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+/* header */
+#header{
+  background-color: var(--color-accent);
+  padding: 32px 0px 25px;
+}
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+.nav__items {
+  display: flex;
+  gap: 43px;
+}
+.items__link a{
+  color: #FFF;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+  text-transform: uppercase;
 }
