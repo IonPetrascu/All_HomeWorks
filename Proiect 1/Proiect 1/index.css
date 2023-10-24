@@ -239,6 +239,7 @@ h1{
   display: flex;
   justify-content: space-around;
   position: relative;
+  flex-wrap: wrap;
 
 }
 .hiw__wrapper::after {
@@ -496,6 +497,11 @@ h1{
 
 
 
+@media screen and (max-width: 1160px) {
+  .hiw__wrapper::after{
+    display: none;
+  }
+}
 @media screen and (max-width: 770px) {
  .header__wrapper{
   flex-wrap: wrap;
@@ -518,6 +524,7 @@ h1{
   width: 100%;
   padding: 15px 0px;
  }
+ 
 }
 
 @media screen and (max-width: 685px) {
