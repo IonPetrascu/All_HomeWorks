@@ -139,6 +139,7 @@ h1{
   background-color: var(--color-accent);
   padding: 32px 0px 25px;
 }
+
 .header__wrapper{
   display: flex;
   justify-content: space-between;
@@ -413,9 +414,113 @@ h1{
   fill: var(--color-main);
 }
 .footer__social-icon:hover{
-  fill: var(--color-accent);
+  fill: var(--color-white);
 }
+
+/* header burger menu */
+.nav-icon-btn {
+	--time: 0.1s;
+	--width: 48px;
+	--height: 30px;
+	--line-height: 2px;
+  --line-margin: 2;
+	
+
+	height: var(--height);
+	width: var(--width);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  background-color: var(--color-accent);
+}
+
+.nav-icon {
+	position: relative;
+	width: var(--width);
+	height: var(--line-height);
+	background-color: var(--color-white);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+	content: '';
+	display: block;
+
+	position: absolute;
+	left: 0;
+
+	width: var(--width);
+	height: var(--line-height);
+
+	background-color: var(--color-white);
+	transition: transform var(--time) ease-in,
+		top var(--time) linear var(--time);
+}
+
+.nav-icon::before {
+	top: calc(var(--line-height) * -8);
+}
+
+.nav-icon::after {
+	top: calc(var(--line-height) * 8);
+}
+
+.nav-icon.nav-icon--active {
+	background-color: transparent;
+  position: absolute;
+  right: 10px;
+  top: 45px;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+	top: 0;
+	transition: top var(--time) linear,
+		transform var(--time) ease-in var(--time);
+}
+
+.nav-icon.nav-icon--active::before {
+	transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+	transform: rotate(-45deg);
+}
+.header-nav__btn{
+	display: none;
+}
+.no-scroll{
+	overflow-y: hidden;
+}
+
+
+
+@media screen and (max-width: 770px) {
+ .header__wrapper{
+  flex-wrap: wrap;
+
+  justify-content: center;
+ gap: 10px;
+ }
+ .nav__items{
+  flex-wrap:wrap ;
+  justify-content: center;
+ }
+}
+
 @media screen and (max-width: 685px) {
+  #header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+  }
+  #hero{
+    height: 900px
+  }
+  .nav__items{
+    gap: 20px;
+  }
   .hero__form{
   flex-direction: column;
   min-width: 100px;
@@ -431,3 +536,16 @@ h1{
   width: 100%;
   }
 }
+
+@media screen and (max-width:500px) {
+  .header-nav__btn{
+    display: flex;
+  }
+  .nav__items{
+    display: none;
+  }
+  .header__wrapper{
+    justify-content: space-between;
+  }
+  
+  }
