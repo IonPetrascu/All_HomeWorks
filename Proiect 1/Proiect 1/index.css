@@ -381,3 +381,35 @@ h1{
   font-size: 16px;
   line-height: 26px;
 }
+/* footer */
+#footer{
+  padding: 122px 0px 47px;
+  background-color: #232323;
+  color: var(--color-white);
+}
+.footer__wrapper {
+  text-align: center;
+}
+.footer__logo {
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px; 
+  letter-spacing: 3.36px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.footer__suptitle {
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 26px; 
+  letter-spacing: 1.6px;
+  margin-bottom: 16px;
+}
+.footer__social-icon{
+  fill: var(--color-main);
+}
+.footer__social-icon:hover{
+  fill: var(--color-accent);
+}
+
