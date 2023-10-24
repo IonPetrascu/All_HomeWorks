@@ -268,3 +268,70 @@ h1{
   font-size: 36px;
   line-height: 26px; 
 }
+
+/* Sections country (2 section)*/
+#country-1{
+  background: url(./img/background/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#country-2{
+  background: url(./img/background/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.country__wrapper {
+  height: 700px;
+  position: relative;
+}
+.country__info {
+  max-width: 543px;
+  background: var(--color-dark-charcoal);
+  opacity: .9;
+  padding: 49px 39px 50px 32px;
+
+}
+.left {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+}
+.right {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+.country__suptitle {
+  color: var(--color-main);
+  font-size: 20px;
+  line-height: 26px; 
+  letter-spacing: 1.5px;
+  margin-bottom: 23px;
+}
+.country__title {
+  color: var(--color-white);
+  font-size: 20px;
+  line-height: 26px; 
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.country__desc {
+  color: var(--color-main);
+  font-size: 16px;
+  line-height: 26px;  
+  margin-bottom: 46px;
+}
+.country__btn {
+  padding: 15px 40px;
+  background: rgb(73,107,254);
+  background: linear-gradient(45deg, rgba(73,107,254,1) 40%, rgba(84,116,253,1) 40%);
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; 
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
