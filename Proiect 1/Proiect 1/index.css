@@ -180,6 +180,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 25px;
 }
 .wcu__info {
   max-width:560px ;
@@ -506,6 +507,17 @@ h1{
   flex-wrap:wrap ;
   justify-content: center;
  }
+ .wcu__wrapper{
+  flex-direction: column;
+ }
+ .wcu__gallery img:first-child,.wcu__gallery img:last-child{
+  margin: 0;
+  width: 100%;
+ }
+ .wcu__button{
+  width: 100%;
+  padding: 15px 0px;
+ }
 }
 
 @media screen and (max-width: 685px) {
@@ -547,5 +559,4 @@ h1{
   .header__wrapper{
     justify-content: space-between;
   }
-  
   }
