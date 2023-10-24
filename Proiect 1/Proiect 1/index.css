@@ -9,6 +9,9 @@
 a{
   text-decoration: none;
 }
+section{
+  overflow-x: hidden;
+}
 button{
   border: none;
   cursor: pointer;
@@ -31,7 +34,7 @@ body{
   font-family: var(--font-main);
   font-size: 1em;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625em;
   color: var(--color-main);
 }
 .wrapper {
@@ -44,9 +47,9 @@ body{
 h1{
   color: var(--color-white);
   text-align: center;
-  font-size: 48px;
+  font-size: 3em;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.625em;
   letter-spacing: 4.8px;
   text-transform: uppercase;
   margin-bottom: 11px;
@@ -62,13 +65,15 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+ 
+  
 }
 .subtitle{
   color: #FFF;
-  font-size: 22px;
+  font-size: 1.375em;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; 
+  line-height:1.625em; 
   letter-spacing: 6.82px;
 }
 .hero__box {
@@ -77,9 +82,9 @@ h1{
 .hero__subtitle {
   color: #FFF;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625em;
   letter-spacing: 6.82px;
   
 }
@@ -99,9 +104,9 @@ h1{
 .hero__form input::placeholder {
   color: var(--color-gray);
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
-  line-height: 26px; 
+  line-height: 1.625em; 
   letter-spacing: 2.8px;
 }
 .hero__form button{
@@ -110,9 +115,9 @@ h1{
   background-color: var(--color-accent);
   text-align: center;
   font-family:var(--font-secondary);
-  font-size: 14px;
+  font-size: 0.875em;
   font-style: normal;
-  line-height: 26px; 
+  line-height: 1.625em; 
   letter-spacing: 1.4px;
   text-transform: uppercase;
   border: 2px solid var(--color-white);
@@ -125,7 +130,7 @@ h1{
 .hero__form button > span::before{
   position: absolute;
   content: url(img/svg/btn-search.svg);
-  right: -26px;
+  right: -1.625em;
   
 }
 
@@ -150,10 +155,10 @@ h1{
 }
 .header__logo {
   color: #FFF;
-  font-size: 24px;
+  font-size: 1.5em;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.625em;
   letter-spacing: 2.4px;
   text-transform: uppercase;
 }
@@ -164,11 +169,14 @@ h1{
 .items__link a{
   color: #FFF;
   font-family: var(--font-secondary);
-  font-size: 14px;
+  font-size: 0.875em;
   font-style: normal;
-  font-weight: 400;
-  line-height: 26px; 
+  line-height: 1.625em; 
   text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+.items__link a:hover{
+  color: var(--color-dark-charcoal)
 }
 /* Why choose Us */
 
@@ -193,15 +201,15 @@ h1{
 .wcu__title {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 36px;
-  line-height: 26px;
+  font-size: 2.25em;
+  line-height: 1.625em;
   margin-bottom: 50px;
 }
 .wcu__desc {
   color: var(--color-main);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 26px; 
+  line-height: 1.625em; 
   letter-spacing: 1.6px;
   margin-bottom: 42px;
 }
@@ -212,11 +220,16 @@ h1{
   background: linear-gradient(45deg, rgba(73,107,254,1) 40%, rgba(84,116,253,1) 40%);
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 26px; 
+  line-height: 1.625em; 
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.wcu__button:hover{
+  background: linear-gradient(45deg, rgba(73,107,254,1) 70%, rgba(84,116,253,1) 70%);
+  scale: 1.1;
 }
 .wcu__gallery {
   display: flex;
@@ -275,8 +288,8 @@ h1{
 }
 .hiw__col-title {
   font-family: var(--font-secondary);
-  font-size: 36px;
-  line-height: 26px; 
+  font-size: 2.25em;
+  line-height: 1.625em; 
 }
 
 /* Sections country (2 section)*/
@@ -315,22 +328,22 @@ h1{
 }
 .country__suptitle {
   color: var(--color-main);
-  font-size: 20px;
-  line-height: 26px; 
+  font-size: 1.25em;
+  line-height: 1.625em; 
   letter-spacing: 1.5px;
   margin-bottom: 23px;
 }
 .country__title {
   color: var(--color-white);
-  font-size: 20px;
-  line-height: 26px; 
+  font-size: 1.25em;
+  line-height: 1.625em; 
   text-transform: uppercase;
   margin-bottom: 13px;
 }
 .country__desc {
   color: var(--color-main);
-  font-size: 16px;
-  line-height: 26px;  
+  font-size: 1em;
+  line-height: 1.625em;  
   margin-bottom: 46px;
 }
 .country__btn {
@@ -339,11 +352,16 @@ h1{
   background: linear-gradient(45deg, rgba(73,107,254,1) 40%, rgba(84,116,253,1) 40%);
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 26px; 
+  line-height: 1.625em; 
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.country__btn:hover{
+  transform: translateY(-5px);
+  background: linear-gradient(45deg, rgba(73,107,254,1) 50%, rgba(84,116,253,1) 70%);
 }
 
 /* testimonial */
@@ -359,8 +377,8 @@ h1{
   color: var(--color-white);
   text-align: center;
   font-family: var(--font-secondary);
-  font-size: 36px;
-  line-height: 26px; 
+  font-size: 2.25em;
+  line-height: 1.625em; 
   margin-bottom: 91px;
 }
 .testimonial__wrapper {
@@ -372,9 +390,7 @@ h1{
   min-width: 280px;
   height: 100%;
 }
-.testimonial__img{
-  
-}
+
 .testimonial__info {
   background: var(--color-dark-charcoal);
   padding: 49px 25px 39px 62px;
@@ -382,14 +398,14 @@ h1{
 }
 .testimonial__info-title {
   color: #FEFEFE;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 1.25em;
+  line-height: 1.625em;
   text-transform: uppercase;
 }
 .testimonial__info-desc {
   color: var(--color-main);
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1em;
+  line-height: 1.625em;
 }
 /* footer */
 #footer{
@@ -402,25 +418,25 @@ h1{
 }
 .footer__logo {
   color: var(--color-white);
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 700;
-  line-height: 26px; 
+  line-height: 1.625em; 
   letter-spacing: 3.36px;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 .footer__suptitle {
   color: var(--color-white);
-  font-size: 16px;
-  line-height: 26px; 
+  font-size: 1em;
+  line-height: 1.625em; 
   letter-spacing: 1.6px;
-  margin-bottom: 16px;
+  margin-bottom: 1em;
 }
 .footer__social-icon{
   fill: var(--color-main);
 }
 .footer__social-icon:hover{
-  fill: var(--color-white);
+  fill: var(--color-accent);
 }
 
 /* header burger menu */
@@ -523,6 +539,59 @@ h1{
 	60% {transform: translateY(-15px);}
 }
 
+/* cookie */
+.cookie_notice {
+  display: none;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 15px;
+  font-family: Verdana, sans-serif;  
+  color: var(--color-white);
+  background: var(--color-dark-charcoal);
+  padding: 10px 20px; 
+
+}
+
+.cookie_btn {
+  display: inline-block;
+  margin: 10px 6px 4px 6px;
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+  padding: 4px 12px;
+  color:var(--color-white);
+  font-weight: bold;
+  text-transform: uppercase; 
+  background: var(--color-accent);
+  border: 2px solid var(--color-accent);
+}
+.cookie_btn:hover {
+  color: var(--color-white);
+}
+.cookie_btn:after,
+.cookie_btn:before {
+  position: absolute;
+  height: 2px;
+  left: 50%;
+  background: var(--color-white);
+  bottom: -6px;
+  content: "";
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.cookie_btn:before {
+  top: -6px;
+}
+.cookie_btn:hover:after,
+.cookie_btn:hover:before {
+  width: 100%;
+  left: 0;
+}
+
 /* media */
 @media screen and (max-width: 1160px) {
   .hiw__wrapper::after{
@@ -574,6 +643,7 @@ h1{
   padding: 15px 0px;
  }
  
+ 
 }
 
 @media screen and (max-width: 685px) {
@@ -595,11 +665,11 @@ h1{
   min-width: 100px;
   }
   .hero__form input{
-    padding: 15px;
+    padding: 20px;
 
   }
  .hero__form button{
-  padding: 15px;
+  padding: 20px;
  }
   .hero__box{
   width: 100%;
@@ -607,6 +677,9 @@ h1{
 }
 
 @media screen and (max-width:500px) {
+  h1{
+    font-size: 2em;
+  }
   .country__wrapper{
     height: 600px;
     transition: all 0.5s linear;
@@ -623,6 +696,8 @@ h1{
   }
   .nav__items{
     display: none;
+    font-size: 38px;
+    text-align: center;
   }
   .header__wrapper{
     justify-content: space-between;

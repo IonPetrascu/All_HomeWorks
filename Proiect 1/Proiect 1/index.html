@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <script src="script.js" defer></script>
+    
     <title>Bhromaon</title>
 </head>
 <body>
     <section id="hero" >
-        <div class="hero__box">
-            <h1>Bhromaon</h1>
+        <div class="hero__box" data-aos="fade-right"data-aos-duration="1500"data-aos-easing="ease-in-sine">
+            <h1 >Bhromaon</h1>
             <span class="hero__subtitle">Safe Travel Anywhere</span>
             <form class="hero__form" action="">
                 <input type="text" name="" id="" placeholder="Search Your Travel Destination">
                 <button type="submit"><span>Search</span></button>
             </form>
-            <div class="hero__scroll-down">
+            <div class="hero__scroll-down " >
                 <span>Scroll Down</span>  
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.12496 4.6512L0.75 1.27635L1.59371 0.43244L7.49994 6.33876L13.4062 0.362183L14.25 1.20609L7.49994 8.02631L6.65621 7.18267L4.12496 4.6512Z" fill="white"/>
@@ -26,17 +27,17 @@
             </div>
         </div>
     </section>
-    <header id="header" >
+    <header id="header">
         <div class="wrapper header__wrapper">
-            <div class="header__logo">
+            <div class="header__logo" data-aos="fade-right">
                 Bhromaon
             </div>
             <nav class="header__nav">
                 <ul class="nav__items">
-                    <li class="items__link"><a href="">Who We Are</a></li>
-                    <li class="items__link"><a href="">What We Do</a></li>
-                    <li class="items__link"><a href="">Travel With Us</a></li>
-                    <li class="items__link"><a href="">Contact Us</a></li>
+                    <li class="items__link" data-aos="fade-left" data-aos-duration="1000"><a href="#">Who We Are</a></li>
+                    <li class="items__link" data-aos="fade-left" data-aos-duration="1500"><a href="#">What We Do</a></li>
+                    <li class="items__link" data-aos="fade-left" data-aos-duration="2000"><a href="#">Travel With Us</a></li>
+                    <li class="items__link" data-aos="fade-left" data-aos-duration="2500"><a href="#">Contact Us</a></li>
                 </ul>
                 <div class="header-nav__btn">
 					<button class="nav-icon-btn">
@@ -51,20 +52,20 @@
    <main>
      <section id="whyChooseUs" >
          <div class="wrapper wcu__wrapper ">
-             <div class="wcu__info">
+             <div class="wcu__info" data-aos="zoom-in" data-aos-duration="1000">
                  <h2 class="wcu__title">Why Choose Us</h2>
                  <p class="wcu__desc">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee </p>
                  <p class="wcu__desc">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
                  <button class="wcu__button">Explore Places </button>
              </div>
              <div class="wcu__gallery">
-                 <img src="/img/base/1.jpg" alt="house on the river bank">
-                 <img src="/img/base/2.jpg" alt="montain">
+                 <img src="/img/base/1.jpg" alt="house on the river bank" data-aos="fade-up-left" data-aos-duration="2000">
+                 <img src="/img/base/2.jpg" alt="montain" data-aos="fade-up-left" data-aos-duration="2500">
              </div>
          </div>
      </section>
      <section id="howItWork" >
-         <div class="wrapper hiw__wrapper" >
+         <div class="wrapper hiw__wrapper" data-aos="zoom-out-up" data-aos-duration="2500">
              <div class="hiw__col">
                  <div class="hiw__col-circle">
                      <img src="./img/svg/search.svg" alt="Search">
@@ -87,7 +88,9 @@
      </section>
      <section id="country-1" >
         <div class="wrapper country__wrapper">
-            <div class="country__info left">
+            <div class="country__info left" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <span class="country__suptitle">Spain </span>
                 <h3 class="country__title">Grand Spain Madrid</h3>
                 <p class="country__desc">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
@@ -97,7 +100,9 @@
      </section>
      <section id="country-2" >
         <div class="wrapper country__wrapper">
-            <div class="country__info right">
+            <div class="country__info right" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 <span class="country__suptitle">Spain </span>
                 <h3 class="country__title">Grand Spain Madrid</h3>
                 <p class="country__desc">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
@@ -105,12 +110,16 @@
             </div>
         </div>
      </section>
-     <section id="testimonial"  >
+     <section id="testimonial" >
         <div class="wrapper">
-            <h2 class="testimonial__title">What Our  Tourist Say</h2>
+            <h2 class="testimonial__title" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">What Our  Tourist Say</h2>
             <div class="testimonial__wrapper">
                     <img class="testimonial__img" src="./img/base/3.jpg" alt="man">
-                <div class="testimonial__info">
+                <div class="testimonial__info" data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-delay="1000"
+                data-aos-duration="3000">
                     <div class="testimonial__info-title">
                         Sam Sumon
                     </div>
@@ -121,8 +130,15 @@
             </div>
         </div>
      </section>
+    <div class="cookie_notice" >
+        This site uses cookies and services for collecting technical data from visitors (IP address, location, etc.) to ensure functionality and improve the quality of service. By continuing to use our site, you automatically agree to the use of these technologies.
+        <div>
+            <a class="cookie_btn" id="cookie_close" href="#">agree</a>
+            <a class="cookie_btn" href="#">Privacy Policy</a>
+        </div>
+    </div>
    </main>
-   <footer id="footer" >
+   <footer id="footer">
     <div class="wrapper footer__wrapper" >
         <h2 class="footer__logo">Bhromaon</h2>        
         <span class="footer__suptitle">Safe Travel Anywhere</span>
@@ -155,5 +171,7 @@
         </div>
     </div>
    </footer>
+   
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
