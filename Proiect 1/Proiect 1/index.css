@@ -13,6 +13,9 @@ button{
   border: none;
   cursor: pointer;
 }
+.none{
+  display: none;
+}
 :root{
 --font-main:'Josefin Sans', sans-serif;
 --font-secondary:font-family: 'Aleo', serif;
@@ -412,4 +415,19 @@ h1{
 .footer__social-icon:hover{
   fill: var(--color-accent);
 }
+@media screen and (max-width: 685px) {
+  .hero__form{
+  flex-direction: column;
+  min-width: 100px;
+  }
+  .hero__form input{
+    padding: 15px;
 
+  }
+ .hero__form button{
+  padding: 15px;
+ }
+  .hero__box{
+  width: 100%;
+  }
+}
