@@ -178,9 +178,10 @@ h1{
   text-transform: uppercase;
   transition: all 0.4s ease;
 }
-.items__link a:hover{
+.items__link a:hover,.items__link a:focus{
   color: var(--color-dark-charcoal)
 }
+
 /* Why choose Us */
 
 #whyChooseUs {
@@ -230,7 +231,7 @@ h1{
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
 }
-.wcu__button:hover{
+.wcu__button:hover,.wcu__button:focus{
   background: linear-gradient(45deg, rgba(73,107,254,1) 70%, rgba(84,116,253,1) 70%);
   scale: 1.1;
 }
@@ -362,7 +363,7 @@ h1{
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
 }
-.country__btn:hover{
+.country__btn:hover,.country__btn:focus{
   transform: translateY(-5px);
   background: linear-gradient(45deg, rgba(73,107,254,1) 50%, rgba(84,116,253,1) 70%);
 }
@@ -439,6 +440,9 @@ h1{
   fill: var(--color-main);
 }
 .footer__social-icon:hover{
+  fill: var(--color-accent);
+}
+.footer__social-icon:focus{
   fill: var(--color-accent);
 }
 
@@ -575,6 +579,9 @@ h1{
 .cookie_btn:hover {
   color: var(--color-white);
 }
+.cookie_btn:focus {
+  color: var(--color-white);
+}
 .cookie_btn:after,
 .cookie_btn:before {
   position: absolute;
@@ -591,6 +598,11 @@ h1{
 }
 .cookie_btn:hover:after,
 .cookie_btn:hover:before {
+  width: 100%;
+  left: 0;
+}
+.cookie_btn:focus:after,
+.cookie_btn:focus:before {
   width: 100%;
   left: 0;
 }
