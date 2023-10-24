@@ -501,6 +501,27 @@ h1{
   .hiw__wrapper::after{
     display: none;
   }
+  .testimonial__wrapper{
+    display: block;
+  }
+  .testimonial__img{
+    display: none;
+  }
+  .testimonial__info{
+    background-image: url(./img/base/3.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .testimonial__info-title{
+    backdrop-filter: blur(10px);
+    color: var(--color-dark-charcoal);
+  }
+  .testimonial__info-desc{
+    backdrop-filter: blur(10px);
+    color: var(--color-white)
+  }
 }
 @media screen and (max-width: 770px) {
  .header__wrapper{
