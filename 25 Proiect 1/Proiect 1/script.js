@@ -16,6 +16,8 @@ btnMobile.addEventListener("click",()=>{
         headerWrapper.style.alignItems = "center";
         headerWrapper.style.justifyContent = "center";
         headerWrapper.style.flexDirection = "column";
+
+        
         navItems.style.flexDirection = "column";
 
         

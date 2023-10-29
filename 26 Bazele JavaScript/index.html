@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h2>1.Cum va numiti?</h2>
+    <button id="btnName" onclick="nameUser()">Start</button>
+    <p id="messageForUser"></p>
+  </div>
+  <div>
+    <h2>2.Cand v-ati nascut?</h2>
+    <button id="btnAge" onclick="userAge()">Start</button>
+    <p id="messageForUser2"></p>
+  </div>
+  <div>
+    <h2>3.Calcularea perimetrului unui patrat</h2>
+    <label for="">Lungimea unei laturi in cm</label>
+    <input type="number" onchange="perimeterSquare(this.value)"/>
+    <p id="messageForUser3"></p>
+  </div>
+  <div>
+    <h2>4.Calcularea diametrului unui cerc</h2>
+    <label for="">Lungimea unei raze</label>
+    <input type="number" onchange="radiusCircle(this.value)"/>
+    <p id="messageForUser4"></p>
+  </div>
+  <div>
+    <h2>5.Calcularea vitezei necesare pentru a ajunge la timp</h2>
+    <label for="citiesDistance">Distanta intre cele 2 orase</label>
+    <input type="number" id="citiesDistance"/>
+    <label for="timeForDistance">Timpul in care doriti sa parcurgeti distanta</label>
+    <input type="number" id="timeForDistance"/>
+    <button id="btnCities">Start</button>
+    <p id="messageForUser5"></p>
+  </div>
+  <div class="converter">
+    <h2>6. Money Converter USD => EUR</h2>
+    <div>
+      <label>$</label>
+      <input placeholder="€" type="number" id="inputUSD" oninput="moneyConverter(this.value)"
+        onchange="moneyConverter(this.value)">
+    </div>
+    <p>EUR: <span id="outputEUR"></span></p>
+  </div>
+  <div>
+    <h2>7. Specificati cata memorie are unitatea flash in GB</h2>
+    <div>
+      <input placeholder="GB" type="number" id="inputGg" oninput="memoryCalc(this.value)"
+        onchange="memoryCalc(this.value)">
+      <label>GB</label>
+    </div>
+    <p><span id="outputMb"></span> </p>
+  </div>
+  <div>
+    <h2>8. Introduceti datele necesare </h2>
+    <div >
+      <input  placeholder="Suma de bani" type="number" id="inputMoney" />
+      <input  placeholder="Pretul unui baton de ciocolata" type="number" id="inputChocolateBar" />
+      <button id="btn"></button>
+    </div>
+    <p >Numarul de batoane de ciocolata care puteti sa cumparati este: <span id="numberChocolate"></span>Lei</p>
+    <p >Restul de bani: <span id="outputRestMoney">0</span>Lei</p>
+  </div>
+  <div>
+    <h2>9. Calcularea ratei anuale a dobânzii de 5%</h2>
+    <div >
+      <input  placeholder="Suma de bani" type="number" id="bankDeposits" />
+      <input  placeholder="Rata anuala" type="number" id="rateAnnual" />
+      <input  placeholder="Numarul de luni" type="number" id="numberMonth" />
+      <button id="btnBank"></button>
+    </div>
+    <p >Suma dobânzii este: <span id="rateInterest">0</span>Lei</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
