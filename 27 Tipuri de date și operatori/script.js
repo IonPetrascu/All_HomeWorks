@@ -122,3 +122,145 @@ circumference.addEventListener("change",function calc(){
   })
 
 
+/* function nextDate(){
+    let zi = document.getElementById("zi").value;
+    let luna = document.getElementById("luna").value;
+    let an = document.getElementById("an").value;
+    console.log(zi,luna,an)
+
+    let date = new Date();
+    
+
+
+if(an >= 1900 && an <= date){
+   if(zi == 31){
+    zi = 1;
+    luna++
+   if(luna >= 12){
+    luna = 1;
+    an++
+   }else if (luna >= 1 && luna < 12){
+    
+   }
+}else if(zi >= 1 && zi < 31){
+    zi++
+    if(luna >= 1 && luna < 12){
+       
+    }
+}
+}
+ */
+
+/* if(an >= 1900 && an <= date ){
+    if(an % 4 == 0 || an % 400 == 0){
+        if(zi == 29 && luna == 2){
+            zi = 0;
+            luna++;
+            
+        }else if(zi == 28 && luna == 2){
+            zi = 0;
+            luna++;
+        }else if(zi >= 1 && zi < 31){
+            zi++;
+        }
+    } 
+} */
+/* alert(`Data urmatoare va fi zi:${zi} ,luna:${luna},anul:${an}`) */
+   
+
+   /*  if(an % 4 == 0 || an % 400 == 0){
+        if(luna == 2 && zi == 29){
+            alert(`anul este bisec`)
+        }else if(luna >= 1 && luna <= 12){
+        }
+
+    }
+     if(zi >= 1 && zi <= 31 ){
+        if(luna >= 1 && luna <= 12){
+            if(an >= 1900 && an <= date.getFullYear() ){
+                    
+            }
+        }
+    } */
+
+/* }
+function verificaDate(zi, luna, an) {
+    if (isNaN(zi) || zi < 1 || zi > 31) return "Ziua introdusă nu este validă.";
+    if (isNaN(luna) || luna < 1 || luna > 12)  return "Luna introdusă nu este validă.";
+    if (isNaN(an))  return "Anul introdus nu este valid.";
+
+   
+    var esteBisect = (an % 4 === 0 && an % 100 !== 0) || (an % 400 === 0);
+    if (luna === 2 && zi > 29 && !esteBisect) {
+        return "Februarie nu poate avea mai mult de 28 de zile în anii non-bisecți.";
+    }
+
+  
+    if ((luna === 4 || luna === 6 || luna === 9 || luna === 11) && zi > 30) {
+        return "Luna introdusă nu poate avea mai mult de 30 de zile.";
+    }
+
+
+    if(an){
+        if(an >= 1900 && an <= date){
+            if((an % 4 === 0 && an % 100 !== 0) || (an % 400 === 0)){
+                if(luna == 2){
+                    if(zi == 29){
+
+                    }else if(zi > 29 ){
+
+                    }else if (zi >= 1 && zi <= 28){
+
+                    }
+                }else if(luna < 2 && luna > 2){
+
+                }
+            }else{
+                
+            }
+        }else return "an gresit"
+    }
+
+   
+
+
+}
+
+*/
+
+function determinaDataUrmatoare() {
+   
+    var dataUtilizator = prompt("Introduceți data în formatul zz:ll:aa");
+
+ 
+    var [zi, luna, an] = dataUtilizator.split(':').map(Number);
+
+ 
+    var esteBisect = (an % 4 === 0 && an % 100 !== 0) || (an % 400 === 0);
+    var zileInFebruarie = esteBisect ? 29 : 28;
+
+
+    zi++;
+
+    
+    if (zi > 31 || (luna === 2 && zi > zileInFebruarie) || (zi > 30 && (luna === 4 || luna === 6 || luna === 9 || luna === 11))) {
+        zi = 1;
+        luna++;
+
+        if (luna > 12) {
+            luna = 1;
+            an++;
+        }
+    }
+
+   
+    console.log("Data următoare este: " + zi + ":" + luna + ":" + an);
+}
+
+
+determinaDataUrmatoare();
+
+
+
+
+
