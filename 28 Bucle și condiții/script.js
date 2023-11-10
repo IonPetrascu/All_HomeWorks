@@ -132,37 +132,28 @@ function sum(a ,b){
 }
 
 
-/* 
 function ghicesteNumarul() {
-    let intervalStart = 0;
-    let intervalEnd = 100;
+ let intervalStart = 0;
+ let intervalEnd = 100;
 
-    alert("Alege un număr între 0 și 100 și voi încerca să-l ghicesc!");
+ alert("Alegete un numar de la 0 pina la 100 si eu o sa incerca sal ghicesc!")
 
-    while (true) {
-        let guess = Math.floor((intervalStart + intervalEnd) / 2);
-        console.log(guess)
-        let userInput = prompt("Este numărul > " + guess + ", < " + guess + " sau == " + guess + "? Introdu >, < sau =:");
-        console.log(userInput)
-        if (userInput === '>') {
+    while(true){
+        guess = Math.floor((intervalStart + intervalEnd) / 2)
+        userInput = prompt(`Este numar > ${guess},< ${guess} sau == ${guess}?Introdu <,>, sau = `)
+        if(userInput === ">"){
             intervalStart = guess + 1;
-            console.log(intervalStart)
-        } else if (userInput === '<') {
+            console.log(intervalStart);
+        }else if (userInput === "<"){
             intervalEnd = guess - 1;
-            console.log(intervalEnd)
-        } else if (userInput === '=') {
-            alert("Numărul pe care l-ai ales este: " + guess);
-            break;
-        } else {
-            alert("Te rog introdu >, < sau =.");
-        }
-
-        if (intervalStart > intervalEnd) {
-            alert("Pare a fi o greșeală în alegerea numărului sau răspunsurile date. Te rog să reiei jocul.");
-            break;
-        }
+            console.log(intervalEnd);
+        }else if (userInput === "="){
+            alert(`Numarul este ${guess}`)
+            break
+        } 
+       
     }
+   
 }
 
 
- */
