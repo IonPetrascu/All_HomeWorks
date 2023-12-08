@@ -31,7 +31,40 @@
         <input type="text" oninput="calcPerimeter()" id="height">
         <p id="answer4"></p>
     </div>
-  
+    <div>
+        <h2>5</h2>
+        <input type="text" oninput="perfectNumber()" id="perfectNumber">
+        <p id="answer5"></p>
+    </div>
+    <div>
+        <h2>6</h2>
+        <input type="text" oninput="perfectNumberRange()" id="startNumber">
+        <input type="text" oninput="perfectNumberRange()" id="endNumber">
+        <p id="answer6"></p>
+    </div>
+    <div>
+        <h2>7</h2>
+        <button onclick="time()">Start</button>
+        <p id="answer7"></p>
+    </div>
+    <div style="display: flex;
+                flex-direction: column;
+                width: 300px;">
+        <h2>8</h2>
+        <label for="timeH">Ore</label>
+        <input type="text" oninput="timeInSecond()" id="timeH">
+        <label for="timeM">Minute</label>
+        <input type="text" oninput="timeInSecond()" id="timeM">
+        <label for="timeS">Secunde</label>
+        <input type="text" oninput="timeInSecond()" id="timeS">
+        <p id="answer8"></p>
+    </div>
+    <div>
+        <h2>9</h2>
+        <input type="text" onkeypress="secondInTime()" id="secondsInput">
+        <p id="answer9"></p>
+    </div>
+    <h2>10</h2>
     <script src="script.js"></script>
 </body>
 </html>
