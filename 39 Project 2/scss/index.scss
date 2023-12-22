@@ -1,0 +1,22 @@
+//Base
+
+
+@use './base/normalize';
+@use './base/variables';
+@use './base/mixins';
+@use './base/base';
+@use './base/extends';
+
+
+
+//Blocks
+@use '../scss/blocks/header';
+@use '../scss/blocks/mobileMenu';
+@use '../scss/blocks/banner';
+@use '../scss/blocks/projects';
+@use '../scss/blocks/news';
+@use '../scss/blocks/gallery';
+@use '../scss/blocks/modal';
+@use '../scss/blocks/map';
+@use '../scss/blocks/form';
+@use '../scss/blocks/footer';
