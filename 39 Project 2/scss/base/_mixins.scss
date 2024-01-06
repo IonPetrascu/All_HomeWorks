@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+//Mixins
+@mixin title {
+    color: $main-color;
+    font-family: $font-main;
+    font-size: 44px;
+    font-weight: 700;
+
+}
+
+@mixin description {
+    color: $main-color;
+    font-family: $font-secondary;
+    font-size: 18px;
+    font-weight: 400;
+    color: $main-color;
+
+}
+
+
+@mixin btn-default($pad-top, $pad-bottom) {
+    padding: $pad-top $pad-bottom;
+    color: $black;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid $main-color;
+    background-color: transparent;
+    cursor: pointer;
+}

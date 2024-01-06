@@ -1,0 +1,182 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.form {
+    width: 700px;
+    min-height: 450px;
+    margin: 0 auto;
+    padding: 90px 60px 68px;
+    background-color: $white;
+    position: absolute;
+    bottom: -23%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(/img/form/city.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: $white;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.form__title {
+    @include title();
+    text-align: center;
+    position: relative;
+    margin-bottom: 42px;
+    font-size: clamp(1.875rem, 0.986vw + 1.567rem, 2.75rem);
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 1px;
+        background-color: $main-color;
+    }
+}
+
+.form__flex {
+    display: flex;
+    gap: 54px;
+
+}
+
+
+.form__list {
+    display: flex;
+    min-width: 280px;
+    gap: 28px;
+    flex-direction: column;
+
+}
+
+.list__item {
+    @include description();
+    line-height: 28px;
+    position: relative;
+    font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
+
+}
+
+.list__item::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.list__item:nth-child(1)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f3c5";
+}
+
+.list__item:nth-child(2)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f095";
+
+}
+
+.list__item:nth-child(3)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f01c";
+}
+
+.list__item:nth-child(4)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f017";
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 33px;
+}
+
+.form__input {
+    padding: 5px 5px 14px 0px;
+    border: none;
+    border-bottom: 1px solid $main-color;
+}
+
+.form__input::placeholder {
+    color: $main-color;
+    opacity: 0.5;
+    @include description();
+    line-height: 27px;
+    color: $black;
+    font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__btn {
+    @include btn-default(12px, 34px);
+    margin-left: auto;
+
+    line-height: 27px;
+    font-size: clamp(1rem, 0.141vw + 0.956rem, 1.125rem);
+
+    &:hover {
+        background-color: $bg-violet;
+        color: $white;
+        transition:background-color 0.4s ease,color 0.4s ease-in ;
+        
+    }
+}
+
+
+//media
+
+@media screen and (max-width: 700px) {
+    .form {
+        width: clamp(280px, 80%, 700px);
+    }
+
+    .form__flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .list__item {
+        text-align: center;
+    }
+
+    .form__btn {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        width: 100%;
+        padding: 20px;
+        bottom: -50%;
+        position: relative;
+    }
+
+    .list__item::before {
+        left: 10px;
+    }
+
+    .form__title:before {
+        display: none;
+    }
+
+    .form__flex {
+        gap: 20px;
+    }
+}
