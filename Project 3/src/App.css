@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+  --color-1:#f3f6f3;
+  --color-2:rgb(138, 43, 226);
+  --color-3:rgba(137, 43, 226, 0.412);
+  --color-4:blueviolet;
+  --text-color:#333;
+}
+
+body[data-theme='false'] {
+  background-color: var(--color-3);
+  --color-1:#373535;
+  --color-2:rgb(98, 75, 119);
+  --color-3:rgba(20, 20, 20, 0.937);
+  --color-4:rgb(98, 75, 119);
+  --text-color:#c5c5bc;
+}
+p{
+  color: var(--text-color);
+}
+.content {
+  max-width: 1400px;
+  margin: 20px auto;
+  columns: 4;
+  column-gap: 20px;
+}
+
+.article {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-1);
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  break-inside: avoid;
+  border-radius: 23px 44px 17px 30px;
+  -webkit-border-radius: 23px 44px 17px 30px;
+  -moz-border-radius: 23px 44px 17px 30px;
+}
+.article img {
+  max-width: 100%;
+  padding-bottom: 10px;
+}
+.article-title {
+  padding-inline: 10px;
+}
+.article-title a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.article-title a:hover {
+  color: var(--color-3);
+}
+.article p {
+  padding-inline: 10px;
+  padding-top: 10px;
+}
+.article-loading {
+  height: 200px;
+  position: relative;
+  background: var(--color-4)
+}
+.article-loading.bg {
+  height: 300px;
+}
+.article-loading.sm {
+  height: 150px;
+}
+.article-loading::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    rgba(138, 43, 226, 0.322),
+    rgba(138, 43, 226, 0.2),
+    rgba(138, 43, 226, 0.5),
+    rgba(138, 43, 226, 0)
+  );
+  animation: shimmer 5s infinite;
+}
+.header-right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.categories {
+  background-color: var(--color-4);
+  color: var(--color-1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  min-height: 40px;
+}
+.categories ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.categories ul li {
+  padding: 5px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  transition: background-color 500ms ease;
+}
+.categories ul li:hover {
+  cursor: pointer;
+  background-color: var(--color-1);
+  color: var(--text-color);
+}
+.categories ul .active {
+  background-color: var(--color-1);
+  color: var(--text-color);
+}
+.input {
+  padding: 10px;
+  width: 300px;
+}
+.input:focus {
+  outline: none;
+}
+.select {
+  background-color: var(--color-1);
+  font-size: 15px;
+  padding: 5px 0px 5px 5px;
+  cursor: pointer;
+}
+.select:focus {
+  outline: none;
+  background-color:var(--color-4)  ;
+  color:  var(--color-1);
+  border: none;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+  transition: all 1s ease-in-out;
+}
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.burger-mobile{
+  display: none;
+}
+.burger-mobile svg {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease;
+}
+.burger-mobile svg:hover {
+  fill: black;
+}
+.burger-mobile-close {
+  display: none;
+}
+.burger-mobile-close svg:hover {
+  cursor: pointer;
+  fill:  var(--color-1);
+}
+
+@media (max-width: 1200px) {
+  .burger-mobile{
+    display: block;
+  }
+  .burger-mobile-close {
+    display: block;
+    align-self: flex-end;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-4);
+    width: 50%;
+    z-index: 999;
+    align-items: flex-start;
+  }
+  .nav-mobile {
+    display: flex;
+    transform: translateX(0%);
+    opacity: 1;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .content {
+    width: calc(100% - 40px);
+    columns: 3;
+  }
+  .input {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+  }
+  .categories {
+    height: 60px;
+  }
+}
+
+.btn-theme{
+  cursor:pointer;
+}
+@media (max-width: 760px) {
+  .nav-mobile{
+  position: fixed;
+  }
+ 
+  
+  .content {
+    columns: 2;
+  }
+}
+@media (max-width: 500px) {
+  .nav{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-4);
+    
+    
+  }
+  .content {
+    columns: 1;
+  }
+  .input{
+    display: block;
+    width: 70%;
+   }
+}
+@media (max-width: 400px) {
+ .categories {
+  flex-wrap: wrap;
+ }
+ .input{
+  
+  width: 60%;
+ }
+ .burger-mobile{
+  display: block;
+ }
+}
